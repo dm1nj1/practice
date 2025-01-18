@@ -1,3 +1,10 @@
+
+header {
+    background-image : 'bg05.jpg'; /* 배경사진의 경로를 입력하세요 */
+   
+    display: flex; /* Flexbox를 사용하여 중앙 정렬 */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
