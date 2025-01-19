@@ -14,7 +14,39 @@ a {
     
   }
 
+.background-wrap {
+    background-image: url('https://image.freepik.com/free-photo/wall-wallpaper-concrete-colored-painted-textured-concept_53876-31799.jpg');
+    background-size: 272px 196px;
+    width: 272px;
+    height: 196px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 a:hover {
     background-color: #ffffff;
+}
+
+.image-container {
+    position: relative;
+    width: cover; /* 원하는 너비 */
+    height: cover; /* 원하는 높이 */
+}
+
+.image-container img {
+    width: cover;
+    height: cover;
+    object-fit: cover; /* 이미지 비율 유지 */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* 텍스트 색상 */
+    font-size: 20px; /* 텍스트 크기 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 텍스트 그림자 */
 }
 
