@@ -29,6 +29,22 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 텍스트 그림자 */
         }
 
+        body {
+            height: 2000px; /* 스크롤을 테스트하기 위해 높이를 늘림 */
+            margin: 0;
+        }
+        .fixed-circle {
+            position: fixed; /* 고정 위치 */
+            bottom: 20px;    /* 화면 하단에서 20픽셀 위 */
+            right: 20px;     /* 화면 오른쪽에서 20픽셀 왼쪽 */
+            width: 100px;    /* 원의 너비 */
+            height: 100px;   /* 원의 높이 */
+            background-color: red; /* 원의 배경색 */
+            border-radius: 50%; /* 원 모양으로 만들기 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+        }
+
+
     /* 컨테이너 스타일 */
     .container {
       display: flex;
@@ -61,6 +77,8 @@
     }
   </style>
     <body>
+        <div class="fixed-circle"><a href="https://start.theborn.co.kr/inquiry.php"><img src="image/inquiry_btn.png" alt="이미지 설명"></a></div>
+
         <div class="image-container" style="background-size: cover">
             <img src="image/global_bg.jpg" alt="이미지 설명">
             <div class="text-overlay"> <div>
