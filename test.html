@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <link rel="stylesheet" href="style3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글로벌 브랜드</title>
+    <style>
+        .image-container {
+            position: relative;
+            width: cover; /* 원하는 너비 */
+            height: cover; /* 원하는 높이 */
+        }
+
+        .image-container img {
+            width: cover;
+            height: cover;
+            object-fit: cover; /* 이미지 비율 유지 */
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* 텍스트 색상 */
+            font-size: 20px; /* 텍스트 크기 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 텍스트 그림자 */
+        }
+
+        body {
+            height: 2000px; /* 스크롤을 테스트하기 위해 높이를 늘림 */
+            margin: 0;
+        }
+        .fixed-circle {
+            position: fixed; /* 고정 위치 */
+            bottom: 20px;    /* 화면 하단에서 20픽셀 위 */
+            right: 20px;     /* 화면 오른쪽에서 20픽셀 왼쪽 */
+            width: 100px;    /* 원의 너비 */
+            height: 100px;   /* 원의 높이 */
+            background-color: red; /* 원의 배경색 */
+            border-radius: 50%; /* 원 모양으로 만들기 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+        }
+
+
+    /* 컨테이너 스타일 */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px; /* 아이템 간 간격 */
+    }
+  
+    /* 아이템 스타일 */
+    .item {
+      width: calc(25% - 20px); /* 4열로 나누기 - 간격 고려 */
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+  
+    .logo img, .global_bi img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .btn_wrap img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+    <body>
+        <div class="fixed-circle"><a href="https://start.theborn.co.kr/inquiry.php"><img src="image/inquiry_btn.png" alt="이미지 설명"></a></div>
+
+        <div class="image-container" style="background-size: cover">
+            <img src="image/global_bg.jpg" alt="이미지 설명">
+            <div class="text-overlay"> <div>
+                
+                <p style="font-size: 20px; text-align: center; color: white; background-color: #d60514; width: 300px; margin-left: auto; margin-right: auto;">THEBORN KOREA</p>
+                </p>
+                <p style="font-size: 200%; text-align: center;">글로벌 브랜드</p>
+                <p style="font-size: 80%; color: white; width: 1200px; text-align: center;">더본은 국내·외 20여 개 브랜드, 3,200여 개의 직/가맹점을 통해 자타공인 글로벌 외식기업으로 성장했습니다.<br> ORIGINAL KOREAN TASTE라는 슬로건 하에 더본은 미국, 중국, 일본, 동남아시아 등 각국 주요 도시에 진출해 한식의 아름다움을 선보이고 있습니다</p>
+        </p></div></div>
+        </div>
+        <div class="section_wrap" style="padding: 20px; background-color: #ffffff;">
+            <div class="tabMenu" style="margin-bottom: 20px;">
+                <ul class="cols_03" style="list-style: none; padding: 0; display: flex; justify-content: center;">
+                    <li style="margin: 0 15px;"><a href="/brand/representation/" style="text-decoration: none; color: #333;">대표 브랜드</a></li>
+                    <li style="margin: 0 15px;"><a href="/brand/global/" class="on" style="text-decoration: none; color: #d60514; font-weight: bold;">글로벌 브랜드</a></li>
+                    <li style="margin: 0 15px;"><a href="/brand/test/" style="text-decoration: none; color: #333;">테스트 브랜드</a></li>
+                </ul>
+            </div>
+            <div class="section" style="padding: 20px; border: 1px solid #ffffff; border-radius: 5px; background-color: #ffffff; color:#818181; font-size: 80%;">
+                <div class="location" style="display: flex; align-items: right; text-align: right;">
+                    <ul style="list-style: none; padding: 0; display: flex; align-items: right;">
+                        <li style="margin-right: 10px;">
+                            <img src="image/home_icon.jpg" alt="" style="width: 24px; height: 24px;">
+                        <p3>> 브랜드 > 글로벌 브랜드</p3>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+   
+        
+
+  
+    
+  
+    <!-- 다른 아이템들 -->
+    <div class="container">
+    <li class="item">
+        <div class="logo">
+          <a href="https://www.bornga.kr/" target="_blank">
+            <img src="image/bornga-1.png" alt="">
+          </a>
+          <div class="btn_wrap">
+            <a href="https://www.bornga.kr/"><img src="image/ico_brand0901.png" alt=""></a>
+          </div>
+        </div>
+        <div class="global_bi">
+          <a href="https://www.bornga.kr/" target="_blank">
+            <img src="image/본가_글로벌BI.jpg" alt="">
+          </a>
+        </div>
+      </li>
+
+    <li class="item">
+        <div class="logo">
+          <a href="https://www.theborn.co.kr/theborn_brand/%ec%83%88%eb%a7%88%ec%9d%84%ec%8b%9d%eb%8b%b9-2/" target="_blank">
+            <img src="image/새마을식당-1.png" alt="">
+          </a>
+          <div class="btn_wrap">
+            <a href="https://www.theborn.co.kr/theborn_brand/%ec%83%88%eb%a7%88%ec%9d%84%ec%8b%9d%eb%8b%b9-2/"><img src="image/ico_brand0902.png" alt=""></a>
+          </div>
+        </div>
+        <div class="global_bi">
+          <a href="https://www.theborn.co.kr/theborn_brand/%ec%83%88%eb%a7%88%ec%9d%84%ec%8b%9d%eb%8b%b9-2/" target="_blank">
+            <img src="image/글로벌브랜드_새마을식당.jpg" alt="">
+          </a>
+        </div>
+      </li>
+
+    <li class="item">
+      <div class="logo">
+        <a href="https://www.theborn.co.kr/theborn_brand/%ed%99%8d%ec%bd%a9%eb%b0%98%ec%a0%90-2/" target="_blank">
+          <img src="image/홍콩반점-2.png" alt="">
+        </a>
+        <div class="btn_wrap">
+          <a href="https://www.theborn.co.kr/theborn_brand/%ed%99%8d%ec%bd%a9%eb%b0%98%ec%a0%90-2/"><img src="image/ico_brand0902.png" alt=""></a>
+        </div>
+      </div>
+      <div class="global_bi">
+        <a href="https://www.theborn.co.kr/theborn_brand/%ed%99%8d%ec%bd%a9%eb%b0%98%ec%a0%90-2/" target="_blank">
+          <img src="image/홍콩반점-1.jpg" alt="">
+        </a>
+      </div>
+    </li>
+
+    <li class="item">
+        <div class="logo">
+          <a href="https://www.theborn.co.kr/theborn_brand/%eb%b0%b1s-%eb%b9%84%eb%b9%94%eb%b0%a5-2/" target="_blank">
+            <img src="image/백스비빔밥-1.png" alt="">
+          </a>
+          <div class="btn_wrap">
+            <a href="https://www.theborn.co.kr/theborn_brand/%eb%b0%b1s-%eb%b9%84%eb%b9%94%eb%b0%a5-2/"><img src="image/ico_brand0902.png" alt=""></a>
+          </div>
+        </div>
+        <div class="global_bi">
+          <a href="https://www.theborn.co.kr/theborn_brand/%eb%b0%b1s-%eb%b9%84%eb%b9%94%eb%b0%a5-2/" target="_blank">
+            <img src="image/글로벌브랜드_백스비빔밥-1.jpg" alt="">
+          </a>
+        </div>
+      </li>
+
+      <li class="item">
+        <div class="logo">
+          <a href="https://www.theborn.co.kr/theborn_brand/%EB%B0%B1%EC%B2%A0%ED%8C%90" target="_blank">
+            <img src="image/백철판-1.png" alt="">
+          </a>
+          <div class="btn_wrap">
+            <a href="https://www.theborn.co.kr/theborn_brand/%EB%B0%B1%EC%B2%A0%ED%8C%90"><img src="image/ico_brand0902.png" alt=""></a>
+          </div>
+        </div>
+        <div class="global_bi">
+          <a href="https://www.theborn.co.kr/theborn_brand/%EB%B0%B1%EC%B2%A0%ED%8C%90" target="_blank">
+            <img src="image/백철판-5.jpg" alt="">
+          </a>
+        </div>
+      </li>
+  
+      <li class="item">
+        <div class="logo">
+          <a href="https://paikdabang.com/" target="_blank">
+            <img src="image/KakaoTalk_20180523_115246159.png" alt="">
+          </a>
+          <div class="btn_wrap">
+            <a href="https://paikdabang.com/"><img src="image/ico_brand0902.png" alt=""></a>
+          </div>
+        </div>
+        <div class="global_bi">
+          <a href="https://paikdabang.com/" target="_blank">
+            <img src="image/글로벌브랜드_백다방-2.jpg" alt="">
+          </a>
+        </div>
+      </li>
+
+      <li class="item">
+        <div class="logo">
+          <a href="https://www.theborn.co.kr/theborn_brand/%ed%95%9c%ec%8b%a0%ed%8f%ac%ec%b0%a8-2//" target="_blank">
+            <img src="image/한신포차.png" alt="">
+          </a>
+          <div class="btn_wrap">
+            <a href="https://www.theborn.co.kr/theborn_brand/%ed%95%9c%ec%8b%a0%ed%8f%ac%ec%b0%a8-2//"><img src="image/ico_brand0902.png" alt=""></a>
+          </div>
+        </div>
+        <div class="global_bi">
+          <a href="https://www.theborn.co.kr/theborn_brand/%ed%95%9c%ec%8b%a0%ed%8f%ac%ec%b0%a8-2//" target="_blank">
+            <img src="image/한신포차_글로벌.png" alt="">
+          </a>
+        </div>
+      </li>
+
+      <li class="item">
+        <div class="logo">
+          <a href="https://www.theborn.co.kr/theborn_brand/%ec%9d%b8%ec%83%9d%ec%84%a4%eb%a0%81%ed%83%95-copy/" target="_blank">
+            <img src="image/logo.png" alt="">
+          </a>
+          <div class="btn_wrap">
+            <a href="https://www.theborn.co.kr/theborn_brand/%ec%9d%b8%ec%83%9d%ec%84%a4%eb%a0%81%ed%83%95-copy/"><img src="image/ico_brand0902.png" alt=""></a>
+          </div>
+        </div>
+        <div class="global_bi">
+          <a href="https://www.theborn.co.kr/theborn_brand/%ec%9d%b8%ec%83%9d%ec%84%a4%eb%a0%81%ed%83%95-copy/" target="_blank">
+            <img src="image/인생설렁탕.jpg" alt="">
+          </a>
+        </div>
+      </li>
+
+      <li class="item">
+        <div class="logo">
+          <a href="https://www.theborn.co.kr/theborn_brand/%ec%97%b0%eb%8f%88%eb%b3%bc%ec%b9%b4%ec%b8%a0-copy/" target="_blank">
+            <img src="image/연돈볼카츠.jpg" alt="">
+          </a>
+          <div class="btn_wrap">
+            <a href="https://www.theborn.co.kr/theborn_brand/%ec%97%b0%eb%8f%88%eb%b3%bc%ec%b9%b4%ec%b8%a0-copy/"><img src="image/ico_brand0902.png" alt=""></a>
+          </div>
+        </div>
+        <div class="global_bi">
+          <a href="https://www.theborn.co.kr/theborn_brand/%ec%97%b0%eb%8f%88%eb%b3%bc%ec%b9%b4%ec%b8%a0-copy/" target="_blank">
+            <img src="image/연돈볼카츠.jpg" alt="">
+          </a>
+        </div>
+      </li>
+    <!-- 다른 브랜드 아이템들 반복 -->
+  </div>
+  
