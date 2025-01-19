@@ -1,20 +1,4 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
-}
-
-h1 {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
-}
-
-p {
+div {
     margin: 20px;
 }
 
@@ -23,25 +7,14 @@ a {
     margin: 10px 0;
     padding: 10px 20px;
     text-decoration: none;
-    color: white;
-    background-color: #007BFF;
+    color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 5px;
-}
+    border: 1px solid #ffffff;
+    
+  }
 
 a:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #ff5722;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #e64a19;
-}
