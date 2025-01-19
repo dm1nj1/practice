@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>고객의 소리</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .large-textarea {
+            font-size: 15px; /* 글씨 크기를 20픽셀로 설정 */
+            padding-top: 5px;
+            padding-left: 10px;
+            width: 10%;     /* 너비를 100%로 설정 */
+            height: 30px;   /* 높이를 100픽셀로 설정 */
+        }
+    </style>
     <link rel="stylesheet" href="j_style.css">
-   
 
 </head>
 
@@ -14,7 +28,7 @@
 
     <div class="mainpage_menu" style="background-image: url(./bg05.jpg); background-repeat: none; background-position: center; background-size: cover;">
         <div style="padding-left: 30px; padding-top: 30px; height: 400px;">
-            <p style="font-size: 20px; color: white; background-color: red; width: 300px; margin-left: auto; margin-right: auto;">THEBORN KOREA</p>
+            <p style="font-size: 20px; color: white; background-color: rgb(148, 27, 27); width: 300px; margin-left: auto; margin-right: auto;">THEBORN KOREA</p>
             <p style="font-size: 40px;color: white; margin-bottom: 0px;">고객의 소리</p>
             <p style="font-size: 20px; padding-top: 0px; margin-top: 0px; color: white;">_________</p>                    
             <p style="font-size: 20px; color: white;">더본코리아에 전하고 싶은 불만, 칭찬을 보내주세요.<br> 항상 고객의 소리에 귀 기울이며 고객만족 향상을 위해 노력하겠습니다.</p>
@@ -23,17 +37,165 @@
 
     <div style="width: 100vw;">
 
-        <h1>고객의 소리</h1> <!--제목-->
+        <p style="font-size: 20px; color: rgb(184, 26, 26);"><b>고객의 소리</b></p> <!--제목-->
+        <hr style="border: 1px solid rgb(184, 26, 26); width: 90%; margin-left: 5%;">
 
-        <hr style="border: 1px solid red; width: 90%; margin-left: 5%;">
-        
-        <p>더본코리아에 전하고 싶은 불만, 칭찬을 보내주세요.<br> 항상 고객의 소리에 귀 기울이며 고객만족 향상을 위해 노력하겠습니다.</p>
+        <div>
+            <p style="font-size: 15px; padding-left: 800px; color: rgb(80, 80, 80); margin-bottom: 0px;">홈 > 고객센터 > 고객의 소리</p>
 
+        </div>
+    </div>
+    <div style="margin-bottom: 15px;">
+        <p style="font-size: 30px; color: rgb(0, 0, 0); margin-bottom: 0px;">고객의 소리</p>
+        <p style="margin-top: 0px; margin-bottom: 0px;">|</p>
+        <p style="font-size: 17px; color: rgb(0, 0, 0); margin-bottom: 50px;">더본코리아에 전하고 싶은 불만, 칭찬을 보내주세요. 항상 고객님들의 목소리에 귀 기울이겠습니다.</p>
     </div>
 
+<div style="padding: 0px; margin-left: 5%; display: flex; flex-direction: column;">
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+        <label for="brand" style="margin-right: 100px;"><b>브랜드명</b><b style="color: red;">*</b></label>
+            
+        <select id="lang" style="font-size: 15px; height:30px; margin-left: 10vw; position: absolute">
+            <option value=" ">브랜드를 선택해주세요</option>
+            <option value="qw">인생설렁탕</option>
+            <option value="we">롤링파스타</option>
+            <option value="er">막이오름</option>
+            <option value="rt">연돈볼카츠</option>
+            <option value="ty">빽보이피자</option>
+            <option value="yu">고투웍</option>
+            <option value="ui">홍콩분식</option>
+            <option value="io">원조쌈밥집</option>
+            <option value="op">한신포차</option>
+        </select>
+
+    </div>
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+        <label for="brand" style="margin-right: 100px;"><b>매장명</b><b style="color: red;">*</b></label>
+        <textarea style="resize: none; margin-left: 10vw; position: absolute"></textarea>
+        <div style="font-size: 13px; color: white; background-color: rgb(201, 40, 40); width: 70px ; margin-left: 14%; text-align: center;">매장찾기</div>
+    </div>
+
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+        <label for="brand" style="margin-right: 100px;"><b>문의유형</b><b style="color: red;">*</b></label>
+        <select id="lang" style="font-size: 15px; height:30px; width:150px; margin-left: 10vw; position: absolute">
+            <option value=" ">--대분류--</option>
+            <option value="qw">칭찬</option>
+            <option value="we">불만</option>
+            <option value="er">제안</option>
+            <option value="rt">창업/가맹</option>
+            <option value="er">더본마켓</option>
+            <option value="er">빽다방app</option>
+        </select>
+        <select id="lang" style="font-size: 15px; height:30px; width:150px; margin-left: 21vw; position: absolute">
+            <option value=" ">--중분류--</option>
+            <option value="qw">제공</option>
+            <option value="we">응대서비스</option>
+            <option value="er">매장환경</option>
+            <option value="rt">청결/위생</option>
+            <option value="ty">주문/결제</option>
+            <option value="yu">맛</option>
+            <option value="ui">기타</option>
+        </select>
+        <select id="lang" style="font-size: 15px; height:30px; width:150px; margin-left: 32vw; position: absolute">
+            <option value=" ">--소분류--</option>
+            <option value="io">직원응대</option>
+            <option value="op">가맹점주응대</option>
+            <option value="op">ㅇ</option>
+        </select>
+    </div>
+
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+        <label for="brand" style="margin-right: 100px;"><b>이용경로</b><b style="color: red;">*</b></label>
+        <div>
+            <div>
+                <form>
+                    <label style="margin-right: 10px;">
+                        <input type="radio" name="ma" value="ma" checked>
+                        <b>매장방문</b>
+                    </label>
+                    <label>
+                        <input type="radio" name="ma" value="ma" checked>
+                        <b>매장방문 외</b>
+                    </label>
+                </form>
+            </div>
+            <div>
+                <div style="display: flex; flex-direction: row; margin-top: 15px; margin-bottom: 15px;">
+                    <label for="brand" style="margin-left: 0vw;"><b>방문일</b></label>
+                    <textarea class="large-textarea" style="resize: none; margin-left:70px; position: absolute">연도-월-일</textarea>
+
+                </div>
+                
+
+            </div>
+        
+
+        </div>
+        
+       
+        
+<!--
+<div>
+    전체
+    <div>
+        이용경로
+    </div>
+    <div>
+        메인
+        <div>
+            1번줄
+        </div>
+        <div>
+            2번줄줄
+        </div>
+
+    </div>
+</div>
+-->
+    </div>
+
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+        dd
+    </div>
+
+
+
     
-    <p>|</p>
-    <p>더본코리아에 전하고 싶은 불만, 칭찬을 보내주세요.<br> 항상 고객님들의 목소리에 귀 기울이겠습니다.</p>
+</div>
+
+
+<!--
+    <div>
+        <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+        <div style="margin-top: 15px; margin-left: 0px; margin-right: 700px; font-size: 20px;">
+            <label for="brand" style="margin-right: 100px;"><b>브랜드명</b><b style="color: red;">*</b></label>
+            
+            <select id="lang" style="font-size: 15px; height:30px;">
+                <option value=" ">브랜드를 선택해주세요</option>
+                <option value="qw">인생설렁탕</option>
+                <option value="we">롤링파스타</option>
+                <option value="er">막이오름</option>
+                <option value="rt">연돈볼카츠</option>
+                <option value="ty">빽보이피자</option>
+                <option value="yu">고투웍</option>
+                <option value="ui">홍콩분식</option>
+                <option value="io">원조쌈밥집</option>
+                <option value="op">한신포차</option>
+            </select>
+        </div>
+        <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%; margin-top: 20px;">
+        <div>
+            <label for="brand" style="margin-right: 100px;"><b>매장명</b><b style="color: red;">*</b></label>
+        </div>
+    </div>
+-->
+    
+
     <br><br> <!--줄바꿈-->
     <hr>
 </body>
