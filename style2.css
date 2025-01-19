@@ -7,10 +7,10 @@ a {
     margin: 10px 0;
     padding: 10px 20px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: #ffffff;
     border-radius: 5px;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     
   }
 
