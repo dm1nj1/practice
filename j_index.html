@@ -16,7 +16,7 @@
             font-size: 15px; /* 글씨 크기를 20픽셀로 설정 */
             padding-top: 5px;
             padding-left: 10px;
-            width: 10%;     /* 너비를 100%로 설정 */
+            width:  15%;     /* 너비를 100%로 설정 */
             height: 30px;   /* 높이를 100픽셀로 설정 */
         }
     </style>
@@ -56,7 +56,7 @@
     <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
         <label for="brand" style="margin-right: 100px;"><b>브랜드명</b><b style="color: red;">*</b></label>
             
-        <select id="lang" style="font-size: 15px; height:30px; margin-left: 10vw; position: absolute">
+        <select id="lang" style="font-size: 12px; height:30px; margin-left: 10vw; position: absolute">
             <option value=" ">브랜드를 선택해주세요</option>
             <option value="qw">인생설렁탕</option>
             <option value="we">롤링파스타</option>
@@ -80,7 +80,7 @@
     <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
     <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
         <label for="brand" style="margin-right: 100px;"><b>문의유형</b><b style="color: red;">*</b></label>
-        <select id="lang" style="font-size: 15px; height:30px; width:150px; margin-left: 10vw; position: absolute">
+        <select id="lang" style="font-size: 12px; height:30px; width:150px; margin-left: 10vw; position: absolute">
             <option value=" ">--대분류--</option>
             <option value="qw">칭찬</option>
             <option value="we">불만</option>
@@ -89,17 +89,17 @@
             <option value="er">더본마켓</option>
             <option value="er">빽다방app</option>
         </select>
-        <select id="lang" style="font-size: 15px; height:30px; width:150px; margin-left: 21vw; position: absolute">
+        <select id="lang" style="font-size: 12px; height:30px; width:150px; margin-left: 21vw; position: absolute">
             <option value=" ">--중분류--</option>
             <option value="qw">제공</option>
             <option value="we">응대서비스</option>
-            <option value="er">매장환경</option>
+            <option value="er">매장환경</option>1
             <option value="rt">청결/위생</option>
             <option value="ty">주문/결제</option>
             <option value="yu">맛</option>
             <option value="ui">기타</option>
         </select>
-        <select id="lang" style="font-size: 15px; height:30px; width:150px; margin-left: 32vw; position: absolute">
+        <select id="lang" style="font-size: 12px; height:30px; width:150px; margin-left: 32vw; position: absolute">
             <option value=" ">--소분류--</option>
             <option value="io">직원응대</option>
             <option value="op">가맹점주응대</option>
@@ -129,15 +129,124 @@
                     <textarea class="large-textarea" style="resize: none; margin-left:70px; position: absolute">연도-월-일</textarea>
 
                 </div>
-                
+                <div style="display: flex; flex-direction: row; margin-top: 15px; margin-bottom: 15px;">
+                    <label for="brand" style="margin-left: 0vw;"><b>결제시간</b></label>
+                    <textarea class="large-textarea" style="resize: none; margin-left:70px; position: absolute"></textarea>
+                    <select id="lang" style="font-size: 12px; height:30px; width:80px; margin-left:310px; position: absolute">
+                        <option value=" ">직접입력</option>
+                        <option value="io">10시</option>
+                        <option value="op">11시</option>
+                        <option value="op">12시</option>
+                        <option value="io">13시</option>
+                        <option value="op">14시</option>
+                        <option value="op">15시</option>
+                        <option value="op">16시</option>
+                        <option value="op">17시</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; flex-direction: row; margin-top: 15px; margin-bottom: 15px;">
+                    <label for="brand" style="margin-left: 0vw;"><b>주문메뉴</b></label>
+                    <textarea class="large-textarea" style="resize: none; margin-left:70px; position: absolute"></textarea>
+                </div>
 
             </div>
         
-
         </div>
         
        
         
+
+    </div>
+
+
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+        <label for="brand" style="margin-right: 40px;"><b>답변알림 서비스</b><b style="color: red;">*</b></label>
+        <div>
+            <form>
+                <label style="margin-right: 10px;">
+                    <input type="radio" name="ma" value="ma" checked>
+                    <b>받지않음</b>
+                </label>
+                <label>
+                    <input type="radio" name="ma" value="ma">
+                    <b>문자 답변</b>
+                </label>
+                <label>
+                    <input type="radio" name="ma" value="ma">
+                    <b>이메일 답변</b>
+                </label>
+                <label>
+                    <input type="radio" name="ma" value="ma">
+                    <b>전화 답변</b>
+                </label>
+            </form>
+        </div>
+    </div>
+
+
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+        <label for="brand" style="margin-right: 100px;"><b>성함</b><b style="color: red;">*</b></label>
+        <textarea style="resize: none; margin-left: 10vw; position: absolute ; "></textarea>
+    </div>
+    
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+        <label for="brand" style="margin-right: 100px;"><b>휴대폰</b><b style="color: red;">*</b></label>
+        <textarea style="resize: none; margin-left: 10vw; position: absolute"></textarea>
+    </div>
+
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+        <label for="brand" style="margin-right: 100px;"><b>이메일</b><b style="color: red;">*</b></label>
+        <textarea style="resize: none; margin-left: 10vw; position: absolute; width: 12%; "></textarea>
+        <b style="margin-left: 12.3vw;">@</b>
+        <textarea style="resize: none; margin-left: 24vw; position: absolute; width: 12%; "></textarea>
+        <select id="lang" style="font-size: 12px; height:30px; width:150px; margin-left: 36.2vw; position: absolute">
+            <option value=" ">직접입력</option>
+            <option value="qw">naver.com</option>
+            <option value="we">hanmail.net</option>
+            <option value="er">google.com</option>
+        </select>
+    </div>  
+
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+        <label for="brand" style="margin-right: 100px;"><b>제목</b><b style="color: red;">*</b></label>
+        <textarea style="resize: none; margin-left: 10vw; position: absolute; width: 39%; "></textarea>
+    </div>
+    
+    
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 20px;">
+        <label for="brand" style="margin-right: 100px;"><b>내용</b><b style="color: red;">*</b></label>
+        <textarea style="resize: none; margin-left: 10vw; position: absolute; width: 50%; height: 35%; "></textarea>
+        <div style="margin-left: 40vw; margin-top: 150px; font-size: 15px; margin-bottom: 0%; margin-left: 45vw; ">
+            <br><br><br><br>
+            현재 0 / 최대 4000byte (한글 2000자, 영문 4000자)
+        </div>
+    </div>
+
+    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+<div>
+    <label style="margin-left: 5px;">
+        <input type="checkbox" id="checkbox1">
+        체크
+    </label>
+</div>
+
+
+
+
+    
+</div>
+
+
+</body>
+</html>
+
 <!--
 <div>
     전체
@@ -156,47 +265,3 @@
     </div>
 </div>
 -->
-    </div>
-
-    <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
-    <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
-        dd
-    </div>
-
-
-
-    
-</div>
-
-
-<!--
-    <div>
-        <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
-        <div style="margin-top: 15px; margin-left: 0px; margin-right: 700px; font-size: 20px;">
-            <label for="brand" style="margin-right: 100px;"><b>브랜드명</b><b style="color: red;">*</b></label>
-            
-            <select id="lang" style="font-size: 15px; height:30px;">
-                <option value=" ">브랜드를 선택해주세요</option>
-                <option value="qw">인생설렁탕</option>
-                <option value="we">롤링파스타</option>
-                <option value="er">막이오름</option>
-                <option value="rt">연돈볼카츠</option>
-                <option value="ty">빽보이피자</option>
-                <option value="yu">고투웍</option>
-                <option value="ui">홍콩분식</option>
-                <option value="io">원조쌈밥집</option>
-                <option value="op">한신포차</option>
-            </select>
-        </div>
-        <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%; margin-top: 20px;">
-        <div>
-            <label for="brand" style="margin-right: 100px;"><b>매장명</b><b style="color: red;">*</b></label>
-        </div>
-    </div>
--->
-    
-
-    <br><br> <!--줄바꿈-->
-    <hr>
-</body>
-</html>
