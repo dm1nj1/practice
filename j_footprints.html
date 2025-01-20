@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko"> <!--언어_한글-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>고객의 소리</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .large-textarea {
+            font-size: 15px; /* 글씨 크기를 20픽셀로 설정 */
+            padding-top: 5px;
+            padding-left: 10px;
+            width:  15%;     /* 너비를 100%로 설정 */
+            height: 30px;   /* 높이를 100픽셀로 설정 */
+        }
+        .container {
+            height: 200px; /* 컨테이너의 높이 설정 */
+            background-color: rgb(144, 144, 144); /* 배경 색상 설정 */
+            display: flex; /* Flexbox 사용 */
+            justify-content: center; /* 수평 가운데 정렬 */
+            align-items: center; /* 수직 가운데 정렬 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .nav-item {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-item:hover {
+            background-color: #f0f0f0;
+        }
+        .content {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            min-height: 100px; /* 최소 높이 설정 */
+        }
+    </style>
+    <link rel="stylesheet" href="j_style.css">
+
+</head>
+
+<body>
+    <div class="mainpage_menu" style="background-image: url(./image/header.jpg); background-repeat: none; background-position: center; background-size: cover;">
+        <div style="padding-left: 30px; padding-top: 30px; height: 300px;">
+            <p style="font-size: 15px; color: white; background-color: rgb(148, 27, 27); width: 250px; margin-left: auto; margin-right: auto;margin-bottom: 0px;">T H E B O R N &nbsp;&nbsp; K O R E A</p>
+            <p style="font-size: 50px;color: white; margin-top: 0px; margin-bottom: 0px;">더본코리아</p>
+            <hr style="border: 0.7px solid rgb(255, 255, 255); width: 4%; margin-left: 47vw;">                
+            <p style="font-size: 15px; color: white;">착한 가격, 대중적인 메뉴의 브랜드를 운영하는 더본코리아는 모든 고객께서<br>
+                부담없는 가격에 푸짐한 음식을 맛보고, 더불어 즐거움까지 느끼실 수 있는 한끼 식사를 만드는 것이 목표입니다.</p>
+        </div>
+    </div>
+    <div style="margin-top: 10px; margin-left: 5%; display: flex; flex-direction: column;">
+        
+        <div style="display: flex; flex-direction: row; margin-left: 10%; margin-top: 15px; margin-bottom: 15px;">
+            <div style="padding-left: 30px; padding-right: 30px;">
+                <div class="nav">
+                    <div class="nav-item" onclick="changeContent(0)">발자취</div>
+                    <div class="nav-item" onclick="changeContent(1)">CEO 백종원</div>
+                    <div class="nav-item" onclick="changeContent(2)">글로벌 더본</div>
+                </div>
+                <hr style="border: 1px solid rgb(146, 146, 146); width: 90%; margin-left: 5%;">
+                <div class="content" id="content">
+                    <h2>페이지 1 내용</h2>
+                    <p>여기는 페이지 1의 내용입니다.</p>
+                </div>
+            
+                <script>
+                    const contents = [
+                        `<h2>페이지 1 내용</h2><p>여기는 페이지 1의 내용입니다.</p>`,
+                        `<h2>페이지 2 내용</h2><p>여기는 페이지 2의 내용입니다.</p>`,
+                        `<h2>페이지 3 내용</h2><p>여기는 페이지 3의 내용입니다.</p>`
+                    ];
+            
+                    function changeContent(index) {
+                        document.getElementById('content').innerHTML = contents[index];
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
