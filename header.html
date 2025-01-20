@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>드롭다운 메뉴 예제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;           
+            left: 0;        
+            width: 200px;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0); 
+            z-index: 1;
+        }
+
+
+        .menu {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            min-width: 120px;
+        }
+
+        .menu li {
+            position: relative;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+        }
+
+        .sub-menu-wraper {
+            display: none;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            background-color: white;
+            z-index: 5;
+            width: 100vw;
+        }
+
+        .sub-menu {
+            display: flex;
+        }
+
+        .sub-menu p {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .sub-menu p:hover {
+            background-color: #fbfbfb;
+            font-weight: bold;
+        }
+
+        .menu li:hover .sub-menu-wraper {
+            display: block;
+        }
+
+        .global {
+            text-align: left;
+            padding-left: 50px;
+            font-weight: bold;
+            min-width: 190px;
+        }
+
+        .menu_button {
+            margin-left: 60px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 60px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            align-items: center;
+            width: 130px;
+
+        }
+
+        .menu_button:hover {
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body style="background-color: gray;">
+    <div style="position: fixed; max-width: 100%; width: 100%; margin: 0; display: flex; justify-content: space-between; background-color: white; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);">
+        <div style="width: 200px;height: 60px;background-color: white;text-align: center;display: flex;align-items: center;justify-content: center;">
+            <div class="overlay"></div>
+            <img src="./image/logo.png" height="70%">
+            <div>
+                <p style="font-size: 20px; font-family: Arial;"><strong>THEBORN</strong></p>
+                <p style="font-size: 7.5px; font-family: Arial; opacity: 50%;">ORIGIANL KOREAN STATE</p>
+            </div>
+        </div>
+        <ul class="menu">
+            <li class="menu li">
+                더본코리아
+                <div class="sub-menu-wraper">
+                    <div class="sub-menu" style="flex-direction: column;">
+                        <hr style="border: 1px solid red; width: 90%; margin-left: 5%;"/>
+                        <div style="display: flex; flex-direction: row; margin-top: 20px; margin-bottom: 20px;">
+                            <div class="global">
+                                글로벌 외식기업,<br>
+                                더본 코리아에 대해<br>
+                                알려드립니다<br>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/footprint01.jpg" style="width: 70px;">
+                                <p>발자취</p>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/footprint02.jpg" style="width: 70px;">
+                                <p>CEO 백종원</p>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/footprint03.jpg" style="width: 70px;">
+                                <p>글로벌 더본</p>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            </li>
+            <li class="menu li">
+                브랜드
+                <div class="sub-menu-wraper">
+                    <div class="sub-menu" style="flex-direction: column;">
+                        <hr style="border: 1px solid red; width: 90%; margin-left: 5%;"/>
+                        <div style="display: flex; flex-direction: row; margin-top: 20px; margin-bottom: 20px;">
+                            <div class="global">
+                                글로벌 외식기업,<br>
+                                더본 코리아에 대해<br>
+                                알려드립니다<br>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/brand01.jpg" style="width: 70px;">
+                                <p>대표 브랜드</p>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/brand02.jpg" style="width: 70px;">
+                                <p>글로벌 브랜드</p>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/brand03.jpg" style="width: 70px;">
+                                <p>테스트 브랜드</p>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            </li> <li class="menu li">
+                매장찾기
+                <div class="sub-menu-wraper">
+                    <div class="sub-menu" style="flex-direction: column;">
+                        <hr style="border: 1px solid red; width: 90%; margin-left: 5%;"/>
+                        <div style="display: flex; flex-direction: row; margin-top: 20px; margin-bottom: 20px;">
+                            <div class="global">
+                                글로벌 외식기업,<br>
+                                더본 코리아에 대해<br>
+                                알려드립니다<br>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/store01.jpg" style="width: 70px;">
+                                <p>국내매장</p>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/store02.jpg" style="width: 70px;">
+                                <p>해외매장</p>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/store_kitchen.jpg" style="width: 70px;">
+                                <p style="margin: 0; padding: 0; font-size: 12px;">주방영상공개</p>
+                                <p style="margin: 0; padding: 0; font-size: 12px;">시범사업매장</p>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            </li> 
+            <li class="menu li">
+                창업센터
+            </li> 
+            <li class="menu li">
+                더본소식
+                <div class="sub-menu-wraper">
+                    <div class="sub-menu" style="flex-direction: column;">
+                        <hr style="border: 1px solid red; width: 90%; margin-left: 5%;"/>
+                        <div style="display: flex; flex-direction: row; margin-top: 20px; margin-bottom: 20px;">
+                            <div class="global">
+                                글로벌 외식기업,<br>
+                                더본 코리아에 대해<br>
+                                알려드립니다<br>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/news01-1.jpg" style="width: 70px;">
+                                <p>뉴스</p>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/news02-1.jpg" style="width: 70px;">
+                                <p>미디어</p>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/news03-1.jpg" style="width: 70px;">
+                                <p>공지</p>
+                            </div>
+                            <div class="menu_button">
+                                <img src="./image/news04-1.png" style="width: 70px;">
+                                <p>채용</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </li> 
+            <li class="menu li">
+                고객의소리
+            </li>
+        </ul>
+        <div style="width: 200px;">
+            <p> </p>
+        </div>
+    </div>
+<div>
+    
+</div>
+</body>
+</html>
