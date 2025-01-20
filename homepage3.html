@@ -1,28 +1,202 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <link rel="stylesheet" href="style3.css"> 
+    
+    <link rel="stylesheet" href="style3.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="widrh=device-width,initial-scale=1.0">
-    <title>간단한 HTML 페이지</title>
-</html>
-<body>
-    <h1>환영합니다!</h1>
-    <p>이것은 간단한 HTML 예제입니다.</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더본코리아 채용</title>
+    <style>
+        .image-container {
+            position: relative;
+            width: cover; /* 원하는 너비 */
+            height: cover; /* 원하는 높이 */
+        }
 
-    <div style="display: flex; flex-direction: row;">theborn Korea
-        career
-            <div>파0</div>
-                 <div>
-                      <div style="display: flex; flex-direction: column;"> 
+        .image-container img {
+            width: cover;
+            height: cover;
+            object-fit: cover; /* 이미지 비율 유지 */
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* 텍스트 색상 */
+            font-size: 20px; /* 텍스트 크기 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 텍스트 그림자 */
+        }
+
+        body {
+            height: 2000px; /* 스크롤을 테스트하기 위해 높이를 늘림 */
+            margin: 0;
+        }
+        .fixed-circle {
+            position: fixed; /* 고정 위치 */
+            top: 20px;    /* 화면 하단에서 20픽셀 위 */
+            right: 20px;     /* 화면 오른쪽에서 20픽셀 왼쪽 */
+            
+        }
+
+
+    /* 컨테이너 스타일 */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px; /* 아이템 간 간격 */
+    }
+  
+    /* 아이템 스타일 */
+    .item {
+      width: calc(25% - 20px); /* 4열로 나누기 - 간격 고려 */
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+  
+    .logo img, .global_bi img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .btn_wrap img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+    <body>
+
+        <div class="fixed-circle"><a href="https://start.theborn.co.kr/inquiry.php"><img src="image/inquiry_btn.png" alt="이미지 설명"></a></div>
+
+        <div class="image-container" style="background-size: cover">
+            <img src="image/sub_header_bg03.jpg" alt="이미지 설명">
+            <div class="text-overlay"> <div>
+                
+                <p style="font-size: 20px; text-align: center; color: white; background-color: #d60514; width: 300px; margin-left: auto; margin-right: auto;">THEBORN KOREA</p>
+                </p>
+                <p style="font-size: 200%; text-align: center; margin-bottom: 20px; margin-left: 5px;">더본소식</p>
+                <hr style="border: 1px solid rgb(147, 147, 147); width: 3%; text-align: center; margin-bottom: 10px;">
+                <p style="font-size: 80%; color: white; width: 1200px; text-align: center;">더본의 미래를 함께할 인재를 모집합니다.<br>서비스 정신과 주인의식, 창의성, 그리고 열정을 가진 사람이야말로 더본이 원하는 인재입니다.</p>
+        </p></div></div>
+        </div>
+
+        <div class="section_wrap" style="padding: 20px; background-color: #ffffff;">
+            <div class="tabMenu" style="margin-bottom: 20px; margin-left: 73px;">
+                <ul class="cols_03" style="list-style: none; padding: 0; display: flex; justify-content: center;">
+                    <li style="margin: 0 15px;"><a href="/brand/representation/" style="text-decoration: none; margin-right: 150px; margin-left: 100px; color: #333;">뉴스</a></li>
+                    <li style="margin: 0 15px;"><a href="/brand/global/" class="on" style="text-decoration: none; margin-right: 150px; margin-left: 100px; color: #333;;">미디어</a></li>
+                    <li style="margin: 0 15px;"><a href="file:///C:/Users/PC/Desktop/cuha/practice/homepage.html" style="text-decoration: none; margin-right: 150px; margin-left: 100px; color: #333;">공지</a></li>
+                    <li style="margin: 0 15px;"><a href="file:///C:/Users/PC/Desktop/cuha/practice/homepage.html" style="text-decoration: none; margin-right: 150px; margin-left: 100px; color: #d60514; font-weight: bold">채용</a></li>
+                </ul>
+            </div>
+            <hr style="border: 1px solid rgb(146, 146, 146); width: 150%; margin-left: 0px;">
+            <div class="section" style="padding: 20px; border: 1px solid #ffffff; border-radius: 5px; background-color: #ffffff; color:#818181; font-size: 80%;">
+                <div class="location" style="display: flex; align-items: right; text-align: right; margin-left: 1400px;">
+                    <ul style="list-style: none; padding: 0; display: flex; align-items: right;">
+                        <li style="margin-right: 10px;">
+                            <img src="image/home_icon.jpg" alt="" style="width: 24px; height: 24px;">
+                        <p3>> 브랜드 > 채용</p3>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-left: 25px; margin-bottom: 30px;text-align: center; font-size: 25px;">더본 핵심가치</div>
+        <hr style="border: none; border-left: 1px solid rgb(147, 147, 147); height: 50px; width: 0; margin: 10px; margin-left: 861px; margin-bottom: 30px;">
+        <div style="margin-left: 530px; margin-bottom: 50px;">맛의 원칙과 기본을 바탕으로 다양하고 합리적인 외식문화의 실천을 경험할 수 있는 곳</div>
+        <div style="margin-left:330px; margin-bottom: 90px;"><img src="image/더본핵심가치.jpg"></div>
+
+        <div style="margin-left: 25px; margin-bottom: 30px;text-align: center; font-size: 25px;">인사제도</div>
+        <hr style="border: none; border-left: 1px solid rgb(147, 147, 147); height: 50px; width: 0; margin: 10px; margin-left: 861px; margin-bottom: 30px;">
+        <div style="margin-left: 620px; margin-bottom: 50px;">다양한 직군별 특성에 맞는 합리적인 인사제도를 운영하고 있습니다.</div>
+        <hr style="border: 1px solid rgb(146, 146, 146); width: 58%; margin-left: 400px;">
+
+        <div style="display: flex; max-width: 800px; flex-direction: row; margin-left: 400px;">
+            <div class="faq_wrap">
+                <p>다양한 직군별 특성에 맞는 합리적인 인사제도를 운영하고 있습니다.</p>
+                <div class="em_system">
+                    <table>
+                        <tbody style="margin-left: 100px;">
+                            <tr>
+                                <td>
+                                    <img src="image/per_sys01.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p style="margin-left: 20px;">평가제도</p>
+                                    <ul>
+                                        <li>회사 가치체계와 경영방침, 사업 계획에 따른 목표 수립과 평가
+                                            <br /> *성과평가 : 조직 목표관리 및 평가, 개인 업무성과에 대한 평가
+                                            <br /> *역량평가 : 계층에 따른 역할 및 역량에 대한 평가</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="image/per_sys02.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p style="margin-left: 20px;">급여체계 및 보상제도</p>
+                                    <ul>
+                                        <li>직군별 특성에 맞는 급여체계 수립 및 운영</li>
+                                        <li>평가 및 업무능력, 직무, 직책에 따른 합리적인 차등 보상 제도 운영</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="image/per_sys03.jpg" alt="">
+                                </td>
+                                <td>
+                                    <p style="margin-left: 20px;">승진제도</p>
+                                    <ul>
+                                        <li>업무능력과 성장 가능성을 바탕으로 승진 기준과 심사를 통한 승진제도 운영</li>
+                                        <li>능력과 성과에 따라 적정 체류년수 이내에도 승진 가능(특별승진)</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            </div>
+
+            <hr style="border: 1px solid rgb(146, 146, 146); width: 58%; margin-left: 400px;">
+            <div style="margin-left: 25px; margin-top: 90PX; margin-bottom: 30px;text-align: center; font-size: 25px;">복리후생</div>
+            <hr style="border: none; border-left: 1px solid rgb(147, 147, 147); height: 50px; width: 0; margin: 10px; margin-left: 861px; margin-bottom: 30px;">
+            <div style="margin-left: 660px; margin-bottom: 50px;">더본의 복리후생 제도는 더욱 더 확대되고 있습니다.</div>
+
+            <p3>01
+                임직원 건강검진 실시
+                체력단련 지원
+                치과/병원 등 협약 할인 지원</p3>
+          
+<div style="display: flex; flex-direction: row;"> 
+        <div><img scr="image/per_pro.jpg"></div>
+             <div>
+                  <div style="display: flex; flex-direction: column;"> 
     
-                            <div style="display: flex; flex-direction: row;">
-                                <div>파1</div>
-                                <div>파2</div>
-                            </div>  
+                        <div style="display: flex; flex-direction: row;">
+                              <div>(파1)</div>
+                              <div>(파2)</div>
+                        </div>  
     
-                            <div style="display: flex; flex-direction: row;">
-                                <div>파3</div>
-                                <div>파4</div>
-                            </div>  
-                    </div>
+                        <div style="display: flex; flex-direction: row;">
+                              <div>(파3)</div>
+                              <div>(파4)</div>
+                         </div>  
+                  </div>
+            </div>
+        
+    </div>
+    
+            
+            
+                    
