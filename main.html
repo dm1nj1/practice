@@ -182,35 +182,35 @@
         setInterval(showSlides, 3000);
     </script>
 
-     <script> // AJAX 방식 문서 include를 위한 JS 입니다. 
-              // 어차피 AJAX 방식 문서 include 안쓸거잖아요? 이부분만 GPT 힘좀 빌렸습니다.
-        function loadHeader() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById('header-container').innerHTML = this.responseText;
-                }
-            };
-            xhttp.open('GET', 'header.html', true); 
-            xhttp.send();
-        }
-        window.onload = loadHeader;
-    </script>
-    
-     <script> // AJAX 방식 문서 include를 위한 JS 입니다. 
-        // 어차피 AJAX 방식 문서 include 안쓸거잖아요? 이부분만 GPT 힘좀 빌렸습니다.
-  function loadHeader() {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-              document.getElementById('footer-container').innerHTML = this.responseText;
-          }
-      };
-      xhttp.open('GET', 'footer.html', true); 
-      xhttp.send();
-  }
-  window.onload = loadHeader;
-</script>
+<script>
+    // AJAX 방식 문서 include를 위한 JS입니다.
+    function loadHeader() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById('header-container').innerHTML = this.responseText;
+            }
+        };
+        xhttp.open('GET', 'header.html', true);
+        xhttp.send();
+    }
+
+    function loadFooter() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById('footer-container').innerHTML = this.responseText;
+            }
+        };
+        xhttp.open('GET', 'footer.html', true);
+        xhttp.send();
+    }
+
+    window.onload = function() {
+        loadHeader();
+        loadFooter();
+    };
+</script>    
 
 </body>
 </html>
