@@ -1,0 +1,65 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텍스트 변경</title>
+  <style>
+    #text {
+      font-size: 20px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <p id="text">이 문장이 바뀔 거예요!</p>
+  <button id="changeTextBtn">텍스트 변경</button>
+
+  <script>
+    const button = document.getElementById('changeTextBtn');
+    const text = document.getElementById('text');
+
+    button.addEventListener('click', () => {
+      text.textContent = '문장이 변경되었습니다!';
+      text.style.color = 'red';
+    });
+  </script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마우스 이벤트</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      margin: 20px auto;
+      text-align: center;
+      line-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">Hover Me!</div>
+
+  <script>
+    const box = document.getElementById('box');
+
+    box.addEventListener('mouseenter', () => {
+      box.style.backgroundColor = 'lightcoral';
+      box.textContent = 'Mouse Over!';
+    });
+
+    box.addEventListener('mouseleave', () => {
+      box.style.backgroundColor = 'lightblue';
+      box.textContent = 'Hover Me!';
+    });
+  </script>
+</body>
+</html>
