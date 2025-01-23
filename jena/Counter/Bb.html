@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Counter</title>
+        <!-- style -->
+        <link rel="stylesheet" href="styles.css"/>
+        <style></style>
+    </head>
+
+    <body>
+        <main>
+            <div class="nav">
+                <div style="margin-top: 30px;margin-left: 30px;">
+                    <b style="font-size:30px;">Counter</b>
+                    <hr>
+                
+                <div style="margin-top: 70px; margin-left: 100px">
+
+                    <div class="container" style="margin-left: 0px;">
+                        <b style="font-size:30px; margin-left: 90px;">Counter</b>
+                    </div>
+                    <span id="value" style="font-size: 50px; margin-left: 130px; ">0</span>
+                    <div class="button-container" style="margin-left: 30px; padding-right: 10px; margin-top: 10px;">
+                        <button class="btn decrease" style="padding-left: 10px; padding-right: 10px;margin-right: 10px;">decrease</button>
+                        <button class="btn reset" style="padding-left: 10px; padding-right: 10px; margin-right: 10px;">reset</button>
+                        <button class="btn increase" style="padding-left: 10px; padding-right: 10px;">increase</button>
+                    </div>
+                </div>
+                </div>    
+            </div>
+
+        </main>
+        
+        <script style="font-size: 50px; margin-left: 135px;">
+            // set initial count
+            let count = 0;
+
+            //select value and buttons
+            const value = document.querySelector("#value");
+            const btns = document.querySelectorAll(".btn");
+
+            btns.forEach(function (btn) {
+                btn.addEventListener("click", function (e) {
+                    const styles = e.currentTarget.classList;
+                    if (styles.contains("decrease")) {
+                        count--;
+                    }
+                    else if(styles.contains('increase')) {
+                        count++;
+                    }
+                    else {
+                        count = 0;
+                    }
+                    if (count > 0) {
+                        value.style.color = "green";
+                    }
+                    if (count < 0) {
+                        value.style.color = "red";
+                    }
+                    if (count === 0) {
+                        value.style.color = "#222";
+                    }
+                    value.textContent = count;
+                });
+            });
+        </script>
+        <!--<script src="Bapp.js"></script>-->
+    </body>
+</html>
