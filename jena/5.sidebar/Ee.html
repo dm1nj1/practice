@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Counter</title>
+        <!-- style -->
+        <link rel="stylesheet" href="styles.css"/>
+        <style>
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--clr-white);
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+                row-gap: 1rem;
+                box-shadow: var(--clr-red-dark);
+                transition: var(--transition);
+                /* transform: translate(-100%); */
+            }
+            .show-sidebar {
+                transform: translate(0);
+            }
+            @media screen and (min-width: 676px) {
+                .sidebar {
+                    width: 400px;
+                }
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <button class="sidebar-toggle">
+            <i class="fas-fa-bars"> </i>
+        </button>
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img scr="./logo.svg" class="logo" alt=""/>
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                <li>
+                    <a href="projects.html">projects</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+            <!-- social media -->
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fab fa-sketch"></i>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+
+
+
+
+
+
+
+
+
+        <script src="eapp.js"></script>
+    </body>
+</html>
