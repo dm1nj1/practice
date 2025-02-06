@@ -2,7 +2,7 @@
 let count = 0;
 
 // select value and buttons
-const value = document.querySelector("#value");
+const value = document.getElementById('span');
 const btns = document.querySelectorAll(".btn");
 
 btns.forEach(function (btn) {
