@@ -1,0 +1,13 @@
+h1  {
+    font-family: "jaf-domus-titling-web",sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 4px;
+    z-index:100;
+    position:absolute;
+    top:290px;
+    left:50vw;
+    }
+
+
