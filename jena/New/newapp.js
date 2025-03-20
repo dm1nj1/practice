@@ -1,0 +1,1 @@
+const url = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=xXsb7mqtnoN1S2s%2FJh%2BlOYmVxBS%2FMSaaHsLdu95DA%2BdeoL6zGqPkHyErv0EoOXJpm%2F6Pzsfmcp9LR53LSpkffw%3D%3D&pageNo=1&numOfRows=100&dataType=JSON&base_date=" + getTodayDate() + "&base_time=0500&nx=55&ny=127";
